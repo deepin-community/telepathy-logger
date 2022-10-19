@@ -1,0 +1,105 @@
+Source: telepathy-logger
+Section: libs
+Priority: optional
+Maintainer: Debian Telepathy maintainers <pkg-telepathy-maintainers@lists.alioth.debian.org>
+Uploaders: Dafydd Harries <daf@debian.org>,
+           Sjoerd Simons <sjoerd@debian.org>,
+           Laurent Bigonville <bigon@debian.org>,
+           Emilio Pozuelo Monfort <pochu@debian.org>
+Build-Depends: dbus,
+               debhelper (>= 12),
+               gir1.2-glib-2.0,
+               gir1.2-telepathyglib-0.12,
+               gobject-introspection (>= 0.10.0),
+               gtk-doc-tools (>= 1.10),
+               intltool (>= 0.35.0),
+               libdbus-1-dev (>= 0.1.0),
+               libdbus-glib-1-dev (>= 0.82),
+               libgirepository1.0-dev (>= 0.10.0),
+               libglib2.0-dev (>= 2.28),
+               libsqlite3-dev,
+               libtelepathy-glib-dev (>= 0.19.2),
+               libxml2-dev,
+               pkg-config,
+               python3:any
+Standards-Version: 4.4.1
+Vcs-Git: https://salsa.debian.org/telepathy-team/telepathy-logger.git
+Vcs-Browser: https://salsa.debian.org/telepathy-team/telepathy-logger
+Homepage: https://telepathy.freedesktop.org/wiki/
+
+Package: telepathy-logger
+Architecture: any
+Section: utils
+Depends: libtelepathy-logger3 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Telepathy logger service - Daemon
+ This package contains the Telepathy Logger daemon.
+ .
+ Telepathy is a D-Bus framework for unifying real time communication,
+ including instant messaging, voice calls and video calls. It abstracts
+ differences between protocols to provide a unified interface for
+ applications.
+
+Package: libtelepathy-logger3
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Breaks: libtelepathy-logger2 (= 0.6.0-1)
+Replaces: libtelepathy-logger2 (= 0.6.0-1)
+Description: Telepathy logger service - utility library
+ This package contains a utility library to access Telepathy log files
+ .
+ Telepathy is a D-Bus framework for unifying real time communication,
+ including instant messaging, voice calls and video calls. It abstracts
+ differences between protocols to provide a unified interface for
+ applications.
+
+Package: libtelepathy-logger-dev
+Architecture: any
+Section: libdevel
+Depends: gir1.2-telepathylogger-0.2 (= ${binary:Version}),
+         libdbus-glib-1-dev (>= 0.11.5),
+         libglib2.0-dev (>= 2.22),
+         libtelepathy-logger3 (= ${binary:Version}),
+         pkg-config,
+         ${misc:Depends}
+Suggests: libtelepathy-logger-doc
+Multi-Arch: same
+Description: Telepathy logger service -- utility library (headers)
+ This package contains development files for the Telepathy logger utility
+ library
+ .
+ Telepathy is a D-Bus framework for unifying real time communication,
+ including instant messaging, voice calls and video calls. It abstracts
+ differences between protocols to provide a unified interface for
+ applications.
+
+Package: libtelepathy-logger-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Suggests: devhelp
+Multi-Arch: foreign
+Description: Telepathy logger service -- documentation
+ This package contains HTML documentation for the Telepathy logger utility
+ library.
+ .
+ Telepathy is a D-Bus framework for unifying real time communication,
+ including instant messaging, voice calls and video calls. It abstracts
+ differences between protocols to provide a unified interface for
+ applications.
+
+Package: gir1.2-telepathylogger-0.2
+Architecture: any
+Section: introspection
+Depends: ${gir:Depends}, ${misc:Depends}
+Multi-Arch: same
+Description: Telepathy logger service - introspection
+ This package contains the introspection data for Telepathy logger.
+ .
+ Telepathy is a D-Bus framework for unifying real time communication,
+ including instant messaging, voice calls and video calls. It abstracts
+ differences between protocols to provide a unified interface for
+ applications.

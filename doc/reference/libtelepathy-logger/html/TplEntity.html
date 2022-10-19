@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>telepathy-logger Reference Manual: TplEntity</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="telepathy-logger Reference Manual">
+<link rel="up" href="ch-public.html" title="libtelepathy-logger API">
+<link rel="prev" href="TplCallEvent.html" title="TplCallEvent">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#TplEntity.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#TplEntity.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#TplEntity.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch-public.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="TplCallEvent.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><img src="right-insensitive.png" width="16" height="16" border="0"></td>
+</tr></table>
+<div class="refentry">
+<a name="TplEntity"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="TplEntity.top_of_page"></a>TplEntity</span></h2>
+<p>TplEntity — Representation of a contact or room</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="TplEntity.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="TplEntity.html" title="TplEntity"><span class="returnvalue">TplEntity</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TplEntity.html#tpl-entity-new" title="tpl_entity_new ()">tpl_entity_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="TplEntity.html" title="TplEntity"><span class="returnvalue">TplEntity</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TplEntity.html#tpl-entity-new-from-tp-contact" title="tpl_entity_new_from_tp_contact ()">tpl_entity_new_from_tp_contact</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="TplEntity.html" title="TplEntity"><span class="returnvalue">TplEntity</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TplEntity.html#tpl-entity-new-from-room-id" title="tpl_entity_new_from_room_id ()">tpl_entity_new_from_room_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TplEntity.html#tpl-entity-get-alias" title="tpl_entity_get_alias ()">tpl_entity_get_alias</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TplEntity.html#tpl-entity-get-identifier" title="tpl_entity_get_identifier ()">tpl_entity_get_identifier</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="TplEntity.html#TplEntityType" title="enum TplEntityType"><span class="returnvalue">TplEntityType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TplEntity.html#tpl-entity-get-entity-type" title="tpl_entity_get_entity_type ()">tpl_entity_get_entity_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TplEntity.html#tpl-entity-get-avatar-token" title="tpl_entity_get_avatar_token ()">tpl_entity_get_avatar_token</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TplEntity.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="TplEntity.html#TplEntity--alias" title="The “alias” property">alias</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="TplEntity.html#TplEntity--avatar-token" title="The “avatar-token” property">avatar-token</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="TplEntity.html#TplEntity--identifier" title="The “identifier” property">identifier</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="TplEntity.html#TplEntity--type" title="The “type” property">type</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TplEntity.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="TplEntity.html#TplEntityType" title="enum TplEntityType">TplEntityType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="TplEntity.html#TplEntityPriv" title="TplEntityPriv">TplEntityPriv</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TplEntity.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> TplEntity
+</pre>
+</div>
+<div class="refsect1">
+<a name="TplEntity.description"></a><h2>Description</h2>
+<p>An object representing a contact or room.</p>
+</div>
+<div class="refsect1">
+<a name="TplEntity.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="tpl-entity-new"></a><h3>tpl_entity_new ()</h3>
+<pre class="programlisting"><a class="link" href="TplEntity.html" title="TplEntity"><span class="returnvalue">TplEntity</span></a> *
+tpl_entity_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                <em class="parameter"><code><a class="link" href="TplEntity.html#TplEntityType" title="enum TplEntityType"><span class="type">TplEntityType</span></a> type</code></em>,
+                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *alias</code></em>,
+                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *avatar_token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.8.8.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-entity-new-from-tp-contact"></a><h3>tpl_entity_new_from_tp_contact ()</h3>
+<pre class="programlisting"><a class="link" href="TplEntity.html" title="TplEntity"><span class="returnvalue">TplEntity</span></a> *
+tpl_entity_new_from_tp_contact (<em class="parameter"><code><a href="http://telepathy.freedesktop.org/doc/telepathy-glib-0.24.x/telepathy-glib-contact.html#TpContact"><span class="type">TpContact</span></a> *contact</code></em>,
+                                <em class="parameter"><code><a class="link" href="TplEntity.html#TplEntityType" title="enum TplEntityType"><span class="type">TplEntityType</span></a> type</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.8.8.3.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>contact</p></td>
+<td class="parameter_description"><p>the TpContact instance to create the TplEntity from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TplEntity.html" title="TplEntity"><span class="type">TplEntity</span></a> type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.8.3.5"></a><h4>Returns</h4>
+<p> a TplEntity instance with identifier, alias and
+avatar's token copied. Type parameter is useful to differentiate between
+normal contact and self contact, thus only <a class="link" href="TplEntity.html#TPL-ENTITY-CONTACT:CAPS"><code class="literal">TPL_ENTITY_CONTACT</code></a> and
+<a class="link" href="TplEntity.html#TPL-ENTITY-SELF:CAPS"><code class="literal">TPL_ENTITY_SELF</code></a> are accepted. If contact is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, an entity of type
+<a class="link" href="TplEntity.html#TPL-ENTITY-UNKNOWN:CAPS"><code class="literal">TPL_ENTITY_UNKNOWN</code></a> with id set to "unknown" is returned.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-entity-new-from-room-id"></a><h3>tpl_entity_new_from_room_id ()</h3>
+<pre class="programlisting"><a class="link" href="TplEntity.html" title="TplEntity"><span class="returnvalue">TplEntity</span></a> *
+tpl_entity_new_from_room_id (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *room_id</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.8.8.4.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>room_id</p></td>
+<td class="parameter_description"><p>the room id which will be the identifier for the entity</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.8.4.5"></a><h4>Returns</h4>
+<p> a TplEntity instance with identifier, alias copied from
+<em class="parameter"><code>room_id</code></em>
+. It also sets <a class="link" href="TplEntity.html#TPL-ENTITY-ROOM:CAPS"><code class="literal">TPL_ENTITY_ROOM</code></a> as type for
+the <a class="link" href="TplEntity.html" title="TplEntity"><span class="type">TplEntity</span></a> returned.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-entity-get-alias"></a><h3>tpl_entity_get_alias ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+tpl_entity_get_alias (<em class="parameter"><code><a class="link" href="TplEntity.html" title="TplEntity"><span class="type">TplEntity</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.8.8.5.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TplEntity.html" title="TplEntity"><span class="type">TplEntity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.8.5.5"></a><h4>Returns</h4>
+<p> the alias of the entity, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-entity-get-identifier"></a><h3>tpl_entity_get_identifier ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+tpl_entity_get_identifier (<em class="parameter"><code><a class="link" href="TplEntity.html" title="TplEntity"><span class="type">TplEntity</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.8.8.6.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TplEntity.html" title="TplEntity"><span class="type">TplEntity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.8.6.5"></a><h4>Returns</h4>
+<p> the identifier of the entity</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-entity-get-entity-type"></a><h3>tpl_entity_get_entity_type ()</h3>
+<pre class="programlisting"><a class="link" href="TplEntity.html#TplEntityType" title="enum TplEntityType"><span class="returnvalue">TplEntityType</span></a>
+tpl_entity_get_entity_type (<em class="parameter"><code><a class="link" href="TplEntity.html" title="TplEntity"><span class="type">TplEntity</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.8.8.7.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TplEntity.html" title="TplEntity"><span class="type">TplEntity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.8.7.5"></a><h4>Returns</h4>
+<p> the type of the entity</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-entity-get-avatar-token"></a><h3>tpl_entity_get_avatar_token ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+tpl_entity_get_avatar_token (<em class="parameter"><code><a class="link" href="TplEntity.html" title="TplEntity"><span class="type">TplEntity</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.8.8.8.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TplEntity.html" title="TplEntity"><span class="type">TplEntity</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.8.8.5"></a><h4>Returns</h4>
+<p> a token representing the avatar of the token, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="TplEntity.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="TplEntityType"></a><h3>enum TplEntityType</h3>
+<div class="refsect3">
+<a name="id-1.2.8.9.2.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="TPL-ENTITY-UNKNOWN:CAPS"></a>TPL_ENTITY_UNKNOWN</p></td>
+<td class="enum_member_description">
+<p>the current contact's type is unknown</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="TPL-ENTITY-CONTACT:CAPS"></a>TPL_ENTITY_CONTACT</p></td>
+<td class="enum_member_description">
+<p>the contact's type represents a user (buddy), but not
+   the account's owner for which <em class="parameter"><code>TPL_ENTITY_SELF</code></em>
+ is used</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="TPL-ENTITY-ROOM:CAPS"></a>TPL_ENTITY_ROOM</p></td>
+<td class="enum_member_description">
+<p>a named room (<span class="type">TP_HANDLE_TYPE_ROOM</span>)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="TPL-ENTITY-SELF:CAPS"></a>TPL_ENTITY_SELF</p></td>
+<td class="enum_member_description">
+<p>the contact's type represents the owner of the account
+   whose channel has been logged, as opposed to <em class="parameter"><code>TPL_ENTITY_CONTACT</code></em>
+ which
+   represents any other user</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TplEntityPriv"></a><h3>TplEntityPriv</h3>
+<pre class="programlisting">typedef struct _TplEntityPriv TplEntityPriv;</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="TplEntity.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="TplEntity--alias"></a><h3>The <code class="literal">“alias”</code> property</h3>
+<pre class="programlisting">  “alias”                    <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The entity's alias.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TplEntity--avatar-token"></a><h3>The <code class="literal">“avatar-token”</code> property</h3>
+<pre class="programlisting">  “avatar-token”             <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The entity's avatar's token.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TplEntity--identifier"></a><h3>The <code class="literal">“identifier”</code> property</h3>
+<pre class="programlisting">  “identifier”               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The entity's identifier.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TplEntity--type"></a><h3>The <code class="literal">“type”</code> property</h3>
+<pre class="programlisting">  “type”                     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The entity's type.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Allowed values: [0,3]</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

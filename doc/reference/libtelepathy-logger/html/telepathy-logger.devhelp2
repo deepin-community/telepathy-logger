@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="telepathy-logger Reference Manual" link="index.html" author="" name="telepathy-logger" version="2" language="c">
+  <chapters>
+    <sub name="libtelepathy-logger API" link="ch-public.html">
+      <sub name="Annotation Glossary" link="ch-public.html#annotation-glossary"/>
+      <sub name="TplLogManager" link="TplLogManager.html"/>
+      <sub name="TplLogWalker" link="TplLogWalker.html"/>
+      <sub name="TplEvent" link="TplEvent.html"/>
+      <sub name="TplTextEvent" link="TplTextEvent.html"/>
+      <sub name="TplCallEvent" link="TplCallEvent.html"/>
+      <sub name="TplEntity" link="TplEntity.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="tpl_log_manager_errors_quark ()" link="TplLogManager.html#tpl-log-manager-errors-quark"/>
+    <keyword type="function" name="TplLogEventFilter ()" link="TplLogManager.html#TplLogEventFilter"/>
+    <keyword type="function" name="tpl_log_manager_dup_singleton ()" link="TplLogManager.html#tpl-log-manager-dup-singleton"/>
+    <keyword type="function" name="tpl_log_manager_exists ()" link="TplLogManager.html#tpl-log-manager-exists"/>
+    <keyword type="function" name="tpl_log_manager_get_dates_async ()" link="TplLogManager.html#tpl-log-manager-get-dates-async"/>
+    <keyword type="function" name="tpl_log_manager_get_dates_finish ()" link="TplLogManager.html#tpl-log-manager-get-dates-finish"/>
+    <keyword type="function" name="tpl_log_manager_get_events_for_date_async ()" link="TplLogManager.html#tpl-log-manager-get-events-for-date-async"/>
+    <keyword type="function" name="tpl_log_manager_get_events_for_date_finish ()" link="TplLogManager.html#tpl-log-manager-get-events-for-date-finish"/>
+    <keyword type="function" name="tpl_log_manager_get_filtered_events_async ()" link="TplLogManager.html#tpl-log-manager-get-filtered-events-async"/>
+    <keyword type="function" name="tpl_log_manager_get_filtered_events_finish ()" link="TplLogManager.html#tpl-log-manager-get-filtered-events-finish"/>
+    <keyword type="function" name="tpl_log_manager_walk_filtered_events ()" link="TplLogManager.html#tpl-log-manager-walk-filtered-events"/>
+    <keyword type="function" name="tpl_log_manager_get_entities_async ()" link="TplLogManager.html#tpl-log-manager-get-entities-async"/>
+    <keyword type="function" name="tpl_log_manager_get_entities_finish ()" link="TplLogManager.html#tpl-log-manager-get-entities-finish"/>
+    <keyword type="function" name="tpl_log_manager_search_async ()" link="TplLogManager.html#tpl-log-manager-search-async"/>
+    <keyword type="function" name="tpl_log_manager_search_finish ()" link="TplLogManager.html#tpl-log-manager-search-finish"/>
+    <keyword type="function" name="tpl_log_manager_search_free ()" link="TplLogManager.html#tpl-log-manager-search-free"/>
+    <keyword type="macro" name="TPL_LOG_MANAGER_ERROR" link="TplLogManager.html#TPL-LOG-MANAGER-ERROR:CAPS"/>
+    <keyword type="enum" name="enum TplLogManagerError" link="TplLogManager.html#TplLogManagerError"/>
+    <keyword type="enum" name="enum TplEventTypeMask" link="TplLogManager.html#TplEventTypeMask"/>
+    <keyword type="struct" name="struct TplLogSearchHit" link="TplLogManager.html#TplLogSearchHit"/>
+    <keyword type="function" name="tpl_log_walker_get_events_async ()" link="TplLogWalker.html#tpl-log-walker-get-events-async" since="0.8.0"/>
+    <keyword type="function" name="tpl_log_walker_get_events_finish ()" link="TplLogWalker.html#tpl-log-walker-get-events-finish" since="0.8.0"/>
+    <keyword type="function" name="tpl_log_walker_rewind_async ()" link="TplLogWalker.html#tpl-log-walker-rewind-async" since="0.8.0"/>
+    <keyword type="function" name="tpl_log_walker_rewind_finish ()" link="TplLogWalker.html#tpl-log-walker-rewind-finish" since="0.8.0"/>
+    <keyword type="function" name="tpl_log_walker_is_start ()" link="TplLogWalker.html#tpl-log-walker-is-start" since="0.8.0"/>
+    <keyword type="function" name="tpl_log_walker_is_end ()" link="TplLogWalker.html#tpl-log-walker-is-end" since="0.8.0"/>
+    <keyword type="struct" name="TplLogWalkerPriv" link="TplLogWalker.html#TplLogWalkerPriv"/>
+    <keyword type="property" name="The “filter” property" link="TplLogWalker.html#TplLogWalker--filter"/>
+    <keyword type="property" name="The “filter-data” property" link="TplLogWalker.html#TplLogWalker--filter-data"/>
+    <keyword type="function" name="tpl_event_get_timestamp ()" link="TplEvent.html#tpl-event-get-timestamp"/>
+    <keyword type="function" name="tpl_event_get_account_path ()" link="TplEvent.html#tpl-event-get-account-path"/>
+    <keyword type="function" name="tpl_event_get_account ()" link="TplEvent.html#tpl-event-get-account"/>
+    <keyword type="function" name="tpl_event_get_sender ()" link="TplEvent.html#tpl-event-get-sender"/>
+    <keyword type="function" name="tpl_event_get_receiver ()" link="TplEvent.html#tpl-event-get-receiver"/>
+    <keyword type="function" name="tpl_event_equal ()" link="TplEvent.html#tpl-event-equal"/>
+    <keyword type="struct" name="TplEventPriv" link="TplEvent.html#TplEventPriv"/>
+    <keyword type="property" name="The “account” property" link="TplEvent.html#TplEvent--account"/>
+    <keyword type="property" name="The “account-path” property" link="TplEvent.html#TplEvent--account-path"/>
+    <keyword type="property" name="The “channel-path” property" link="TplEvent.html#TplEvent--channel-path"/>
+    <keyword type="property" name="The “receiver” property" link="TplEvent.html#TplEvent--receiver"/>
+    <keyword type="property" name="The “sender” property" link="TplEvent.html#TplEvent--sender"/>
+    <keyword type="property" name="The “timestamp” property" link="TplEvent.html#TplEvent--timestamp"/>
+    <keyword type="function" name="tpl_text_event_get_message_type ()" link="TplTextEvent.html#tpl-text-event-get-message-type"/>
+    <keyword type="function" name="tpl_text_event_get_edit_timestamp ()" link="TplTextEvent.html#tpl-text-event-get-edit-timestamp"/>
+    <keyword type="function" name="tpl_text_event_get_message ()" link="TplTextEvent.html#tpl-text-event-get-message"/>
+    <keyword type="function" name="tpl_text_event_get_message_token ()" link="TplTextEvent.html#tpl-text-event-get-message-token"/>
+    <keyword type="function" name="tpl_text_event_get_supersedes_token ()" link="TplTextEvent.html#tpl-text-event-get-supersedes-token"/>
+    <keyword type="function" name="tpl_text_event_get_supersedes ()" link="TplTextEvent.html#tpl-text-event-get-supersedes"/>
+    <keyword type="struct" name="TplTextEventPriv" link="TplTextEvent.html#TplTextEventPriv"/>
+    <keyword type="property" name="The “edit-timestamp” property" link="TplTextEvent.html#TplTextEvent--edit-timestamp"/>
+    <keyword type="property" name="The “message” property" link="TplTextEvent.html#TplTextEvent--message"/>
+    <keyword type="property" name="The “message-token” property" link="TplTextEvent.html#TplTextEvent--message-token"/>
+    <keyword type="property" name="The “message-type” property" link="TplTextEvent.html#TplTextEvent--message-type"/>
+    <keyword type="property" name="The “supersedes-token” property" link="TplTextEvent.html#TplTextEvent--supersedes-token"/>
+    <keyword type="function" name="tpl_call_event_get_duration ()" link="TplCallEvent.html#tpl-call-event-get-duration"/>
+    <keyword type="function" name="tpl_call_event_get_end_actor ()" link="TplCallEvent.html#tpl-call-event-get-end-actor"/>
+    <keyword type="function" name="tpl_call_event_get_end_reason ()" link="TplCallEvent.html#tpl-call-event-get-end-reason"/>
+    <keyword type="function" name="tpl_call_event_get_detailed_end_reason ()" link="TplCallEvent.html#tpl-call-event-get-detailed-end-reason"/>
+    <keyword type="struct" name="TplCallEventPriv" link="TplCallEvent.html#TplCallEventPriv"/>
+    <keyword type="property" name="The “detailed-end-reason” property" link="TplCallEvent.html#TplCallEvent--detailed-end-reason"/>
+    <keyword type="property" name="The “duration” property" link="TplCallEvent.html#TplCallEvent--duration"/>
+    <keyword type="property" name="The “end-actor” property" link="TplCallEvent.html#TplCallEvent--end-actor"/>
+    <keyword type="property" name="The “end-reason” property" link="TplCallEvent.html#TplCallEvent--end-reason"/>
+    <keyword type="function" name="tpl_entity_new ()" link="TplEntity.html#tpl-entity-new"/>
+    <keyword type="function" name="tpl_entity_new_from_tp_contact ()" link="TplEntity.html#tpl-entity-new-from-tp-contact"/>
+    <keyword type="function" name="tpl_entity_new_from_room_id ()" link="TplEntity.html#tpl-entity-new-from-room-id"/>
+    <keyword type="function" name="tpl_entity_get_alias ()" link="TplEntity.html#tpl-entity-get-alias"/>
+    <keyword type="function" name="tpl_entity_get_identifier ()" link="TplEntity.html#tpl-entity-get-identifier"/>
+    <keyword type="function" name="tpl_entity_get_entity_type ()" link="TplEntity.html#tpl-entity-get-entity-type"/>
+    <keyword type="function" name="tpl_entity_get_avatar_token ()" link="TplEntity.html#tpl-entity-get-avatar-token"/>
+    <keyword type="enum" name="enum TplEntityType" link="TplEntity.html#TplEntityType"/>
+    <keyword type="struct" name="TplEntityPriv" link="TplEntity.html#TplEntityPriv"/>
+    <keyword type="property" name="The “alias” property" link="TplEntity.html#TplEntity--alias"/>
+    <keyword type="property" name="The “avatar-token” property" link="TplEntity.html#TplEntity--avatar-token"/>
+    <keyword type="property" name="The “identifier” property" link="TplEntity.html#TplEntity--identifier"/>
+    <keyword type="property" name="The “type” property" link="TplEntity.html#TplEntity--type"/>
+  </functions>
+</book>

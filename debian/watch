@@ -1,0 +1,2 @@
+version=3
+https://telepathy.freedesktop.org/releases/telepathy-logger/telepathy\-logger\-(0\.[0-9]*[24680]\..*)\.tar\.(?:gz|bz2|xz)

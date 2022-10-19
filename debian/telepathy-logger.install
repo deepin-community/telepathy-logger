@@ -1,0 +1,5 @@
+usr/lib/systemd
+usr/lib/telepathy
+usr/share/dbus-1
+usr/share/glib-2.0/schemas
+usr/share/telepathy

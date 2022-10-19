@@ -1,0 +1,75 @@
+commit 2506a497eff0d3944110f2081a83871beb8e456a
+Author: Laurent Bigonville <bigon@bigon.be>
+Date:   Mon Dec 5 20:14:13 2016 +0100
+
+    Add systemd user service file
+    
+    Install a .service file so telepathy-logger ends up in his own cgroup.
+    
+    The BusName is set to 'org.freedesktop.Telepathy.Logger' as it is the
+    last name to be claimed during the startup of the daemon.
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=92115
+
+diff --git a/data/Makefile.am b/data/Makefile.am
+index 1e2d780..dc1add9 100644
+--- a/data/Makefile.am
++++ b/data/Makefile.am
+@@ -13,6 +13,12 @@ servicefile_DATA = $(servicefile_in_files:.service.in=.service)
+ %.service: %.service.in Makefile
+ 	$(AM_V_GEN)sed -e "s|[@]libexecdir[@]|$(libexecdir)|" $< > $@
+ 
++systemd_user_in_files = telepathy-logger.systemd.in
++systemd_userdir = $(prefix)/lib/systemd/user
++systemd_user_DATA = telepathy-logger.service
++telepathy-logger.service: telepathy-logger.systemd.in Makefile
++	$(AM_V_GEN)sed -e "s|[@]libexecdir[@]|$(libexecdir)|" $< > $@
++
+ clientfiledir = $(datarootdir)/telepathy/clients
+ 
+ clientfile_parts = $(top_srcdir)/data/Logger.Observer.client.in \
+@@ -26,11 +32,13 @@ EXTRA_DIST = 				\
+ 	$(gsettings_files)		\
+ 	$(clientfile_DATA)		\
+ 	$(servicefile_in_files)		\
++	$(systemd_user_in_files)	\
+ 	$(clientfile_parts)
+ 
+ CLEANFILES = \
+ 	$(gsettings_SCHEMAS) \
+ 	$(servicefile_DATA) \
++	$(systemd_user_DATA) \
+ 	$(clientfile_DATA)
+ 
+ # Generates Logger.client file
+diff --git a/data/org.freedesktop.Telepathy.Client.Logger.service.in b/data/org.freedesktop.Telepathy.Client.Logger.service.in
+index a5e7251..de0c5b9 100644
+--- a/data/org.freedesktop.Telepathy.Client.Logger.service.in
++++ b/data/org.freedesktop.Telepathy.Client.Logger.service.in
+@@ -1,3 +1,4 @@
+ [D-BUS Service]
+ Name=org.freedesktop.Telepathy.Client.Logger
+ Exec=@libexecdir@/telepathy-logger
++SystemdService=telepathy-logger.service
+diff --git a/data/org.freedesktop.Telepathy.Logger.service.in b/data/org.freedesktop.Telepathy.Logger.service.in
+index 684fb90..be324f8 100644
+--- a/data/org.freedesktop.Telepathy.Logger.service.in
++++ b/data/org.freedesktop.Telepathy.Logger.service.in
+@@ -1,3 +1,4 @@
+ [D-BUS Service]
+ Name=org.freedesktop.Telepathy.Logger
+ Exec=@libexecdir@/telepathy-logger
++SystemdService=telepathy-logger.service
+diff --git a/data/telepathy-logger.systemd.in b/data/telepathy-logger.systemd.in
+new file mode 100644
+index 0000000..c947e6e
+--- /dev/null
++++ b/data/telepathy-logger.systemd.in
+@@ -0,0 +1,7 @@
++[Unit]
++Description=Telepathy logger service
++
++[Service]
++Type=dbus
++BusName=org.freedesktop.Telepathy.Logger
++ExecStart=@libexecdir@/telepathy-logger

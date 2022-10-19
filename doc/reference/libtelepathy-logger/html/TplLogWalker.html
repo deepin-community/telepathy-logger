@@ -1,0 +1,692 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>telepathy-logger Reference Manual: TplLogWalker</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="telepathy-logger Reference Manual">
+<link rel="up" href="ch-public.html" title="libtelepathy-logger API">
+<link rel="prev" href="TplLogManager.html" title="TplLogManager">
+<link rel="next" href="TplEvent.html" title="TplEvent">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#TplLogWalker.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#TplLogWalker.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#TplLogWalker.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch-public.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="TplLogManager.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="TplEvent.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="TplLogWalker"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="TplLogWalker.top_of_page"></a>TplLogWalker</span></h2>
+<p>TplLogWalker — Iterate over the logs</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="TplLogWalker.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TplLogWalker.html#tpl-log-walker-get-events-async" title="tpl_log_walker_get_events_async ()">tpl_log_walker_get_events_async</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TplLogWalker.html#tpl-log-walker-get-events-finish" title="tpl_log_walker_get_events_finish ()">tpl_log_walker_get_events_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TplLogWalker.html#tpl-log-walker-rewind-async" title="tpl_log_walker_rewind_async ()">tpl_log_walker_rewind_async</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TplLogWalker.html#tpl-log-walker-rewind-finish" title="tpl_log_walker_rewind_finish ()">tpl_log_walker_rewind_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TplLogWalker.html#tpl-log-walker-is-start" title="tpl_log_walker_is_start ()">tpl_log_walker_is_start</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TplLogWalker.html#tpl-log-walker-is-end" title="tpl_log_walker_is_end ()">tpl_log_walker_is_end</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TplLogWalker.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></td>
+<td class="property_name"><a class="link" href="TplLogWalker.html#TplLogWalker--filter" title="The “filter” property">filter</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></td>
+<td class="property_name"><a class="link" href="TplLogWalker.html#TplLogWalker--filter-data" title="The “filter-data” property">filter-data</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TplLogWalker.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="TplLogWalker.html#TplLogWalkerPriv" title="TplLogWalkerPriv">TplLogWalkerPriv</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TplLogWalker.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> TplLogWalker
+</pre>
+</div>
+<div class="refsect1">
+<a name="TplLogWalker.description"></a><h2>Description</h2>
+<p>The <a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a> object allows the user to sequentially iterate
+over the logs.</p>
+<div class="example">
+<a name="id-1.2.4.7.3"></a><p class="title"><b>Example 1. Using a TplLogWalker to fetch text events from the logs.</b></p>
+<div class="example-contents">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="preproc">#include</span><span class="normal"> </span><span class="string">&lt;telepathy-glib/telepathy-glib.h&gt;</span>
+<span class="preproc">#include</span><span class="normal"> </span><span class="string">&lt;telepathy-logger/telepathy-logger.h&gt;</span>
+
+<span class="keyword">static</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GMainLoop">GMainLoop</a> </span><span class="symbol">*</span><span class="normal"> loop </span><span class="symbol">=</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">;</span>
+
+<span class="keyword">static</span><span class="normal"> </span><span class="type">void</span>
+<span class="function">events_foreach</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">gpointer</span><span class="normal"> data</span><span class="symbol">,</span><span class="normal"> </span><span class="usertype">gpointer</span><span class="normal"> user_data</span><span class="symbol">)</span>
+<span class="cbracket">{</span>
+<span class="normal">  </span><span class="usertype">TplEvent</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">event </span><span class="symbol">=</span><span class="normal"> </span><span class="function">TPL_EVENT</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">data</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="keyword">const</span><span class="normal"> </span><span class="usertype">gchar</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">message</span><span class="symbol">;</span>
+<span class="normal">  </span><span class="usertype">gint64</span><span class="normal"> timestamp</span><span class="symbol">;</span>
+
+<span class="normal">  timestamp </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="TplEvent.html#tpl-event-get-timestamp">tpl_event_get_timestamp</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">event</span><span class="symbol">);</span>
+<span class="normal">  message </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="TplTextEvent.html#tpl-text-event-get-message">tpl_text_event_get_message</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">TPL_TEXT_EVENT</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">event</span><span class="symbol">));</span>
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-Message-Logging.html#g-message">g_message</a></span><span class="normal"> </span><span class="symbol">(</span><span class="string">"%"</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#G-GINT64-FORMAT:CAPS">G_GINT64_FORMAT</a> </span><span class="string">" %s"</span><span class="symbol">,</span><span class="normal"> timestamp</span><span class="symbol">,</span><span class="normal"> message</span><span class="symbol">);</span>
+<span class="cbracket">}</span>
+
+<span class="keyword">static</span><span class="normal"> </span><span class="type">void</span>
+<span class="function">log_walker_get_events_cb</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">GObject</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">source_object</span><span class="symbol">,</span>
+<span class="normal">    </span><span class="usertype">GAsyncResult</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">res</span><span class="symbol">,</span>
+<span class="normal">    </span><span class="usertype">gpointer</span><span class="normal"> user_data</span><span class="symbol">)</span>
+<span class="cbracket">{</span>
+<span class="normal">  </span><span class="usertype">TplLogWalker</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">walker </span><span class="symbol">=</span><span class="normal"> </span><span class="function">TPL_LOG_WALKER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">source_object</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="usertype">GList</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">events</span><span class="symbol">;</span>
+
+<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(!</span><span class="function"><a href="TplLogWalker.html#tpl-log-walker-get-events-finish">tpl_log_walker_get_events_finish</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">walker</span><span class="symbol">,</span><span class="normal"> res</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">events</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">))</span>
+<span class="normal">    </span><span class="cbracket">{</span>
+<span class="normal">      </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#g-main-loop-quit">g_main_loop_quit</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">loop</span><span class="symbol">);</span>
+<span class="normal">      </span><span class="keyword">return</span><span class="symbol">;</span>
+<span class="normal">    </span><span class="cbracket">}</span>
+
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-foreach">g_list_foreach</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">events</span><span class="symbol">,</span><span class="normal"> events_foreach</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free-full">g_list_free_full</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">events</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span><span class="symbol">);</span>
+<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="function"><a href="TplLogWalker.html#tpl-log-walker-is-end">tpl_log_walker_is_end</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">walker</span><span class="symbol">))</span>
+<span class="normal">    </span><span class="cbracket">{</span>
+<span class="normal">      </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#g-main-loop-quit">g_main_loop_quit</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">loop</span><span class="symbol">);</span>
+<span class="normal">      </span><span class="keyword">return</span><span class="symbol">;</span>
+<span class="normal">    </span><span class="cbracket">}</span>
+
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-Message-Logging.html#g-message">g_message</a></span><span class="normal"> </span><span class="symbol">(</span><span class="string">""</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="TplLogWalker.html#tpl-log-walker-get-events-async">tpl_log_walker_get_events_async</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">walker</span><span class="symbol">,</span>
+<span class="normal">      </span><span class="number">5</span><span class="symbol">,</span>
+<span class="normal">      log_walker_get_events_cb</span><span class="symbol">,</span>
+<span class="normal">      <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
+<span class="cbracket">}</span>
+
+<span class="keyword">static</span><span class="normal"> </span><span class="type">void</span>
+<span class="function">accounts_foreach</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">gpointer</span><span class="normal"> data</span><span class="symbol">,</span><span class="normal"> </span><span class="usertype">gpointer</span><span class="normal"> user_data</span><span class="symbol">)</span>
+<span class="cbracket">{</span>
+<span class="normal">  </span><span class="usertype">TpAccount</span><span class="normal"> </span><span class="symbol">**</span><span class="normal">account_out </span><span class="symbol">=</span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="http://telepathy.freedesktop.org/doc/telepathy-glib-0.24.x/telepathy-glib-account.html#TpAccount">TpAccount</a> </span><span class="symbol">**)</span><span class="normal"> user_data</span><span class="symbol">;</span>
+<span class="normal">  </span><span class="usertype">TpAccount</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">account </span><span class="symbol">=</span><span class="normal"> </span><span class="function">TP_ACCOUNT</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">data</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="keyword">const</span><span class="normal"> </span><span class="usertype">gchar</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">display_name</span><span class="symbol">;</span>
+
+<span class="normal">  display_name </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://telepathy.freedesktop.org/doc/telepathy-glib-0.24.x/telepathy-glib-account.html#tp-account-get-display-name">tp_account_get_display_name</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">account</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="number">0</span><span class="normal"> </span><span class="symbol">!=</span><span class="normal"> </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-String-Utility-Functions.html#g-strcmp0">g_strcmp0</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">display_name</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"alice@bar.net"</span><span class="symbol">))</span>
+<span class="normal">    </span><span class="keyword">return</span><span class="symbol">;</span>
+
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref">g_object_ref</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">account</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="symbol">*</span><span class="normal">account_out </span><span class="symbol">=</span><span class="normal"> account</span><span class="symbol">;</span>
+<span class="cbracket">}</span>
+
+<span class="keyword">static</span><span class="normal"> </span><span class="type">void</span>
+<span class="function">account_manager_prepare_cb</span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a> </span><span class="symbol">*</span><span class="normal"> source_object</span><span class="symbol">,</span>
+<span class="normal">    <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html">GAsyncResult</a> </span><span class="symbol">*</span><span class="normal"> res</span><span class="symbol">,</span>
+<span class="normal">    </span><span class="usertype">gpointer</span><span class="normal"> user_data</span><span class="symbol">)</span>
+<span class="cbracket">{</span>
+<span class="normal">  </span><span class="usertype">TpAccountManager</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">account_manager </span><span class="symbol">=</span><span class="normal"> </span><span class="function">TP_ACCOUNT_MANAGER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">source_object</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="usertype">GList</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">accounts</span><span class="symbol">;</span>
+<span class="normal">  </span><span class="usertype">TpAccount</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">account </span><span class="symbol">=</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">;</span>
+<span class="normal">  </span><span class="usertype">TplLogManager</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">log_manager</span><span class="symbol">;</span>
+<span class="normal">  </span><span class="usertype">TplLogWalker</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">walker</span><span class="symbol">;</span>
+<span class="normal">  </span><span class="usertype">TplEntity</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">target</span><span class="symbol">;</span>
+
+<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(!</span><span class="function"><a href="http://telepathy.freedesktop.org/doc/telepathy-glib-0.24.x/telepathy-glib-proxy.html#tp-proxy-prepare-finish">tp_proxy_prepare_finish</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">source_object</span><span class="symbol">,</span><span class="normal"> res</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">))</span>
+<span class="normal">    </span><span class="keyword">return</span><span class="symbol">;</span>
+
+<span class="normal">  accounts </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://telepathy.freedesktop.org/doc/telepathy-glib-0.24.x/telepathy-glib-account-manager.html#tp-account-manager-get-valid-accounts">tp_account_manager_get_valid_accounts</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">account_manager</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-foreach">g_list_foreach</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">accounts</span><span class="symbol">,</span><span class="normal"> accounts_foreach</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">account</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free-full">g_list_free_full</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">accounts</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span><span class="symbol">);</span>
+<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">account </span><span class="symbol">==</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">)</span>
+<span class="normal">    </span><span class="cbracket">{</span>
+<span class="normal">      </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#g-main-loop-quit">g_main_loop_quit</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">loop</span><span class="symbol">);</span>
+<span class="normal">      </span><span class="keyword">return</span><span class="symbol">;</span>
+<span class="normal">    </span><span class="cbracket">}</span>
+
+<span class="normal">  log_manager </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="TplLogManager.html#tpl-log-manager-dup-singleton">tpl_log_manager_dup_singleton</a></span><span class="normal"> </span><span class="symbol">();</span>
+
+<span class="normal">  target </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="TplEntity.html#tpl-entity-new">tpl_entity_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="string">"bob@foo.net"</span><span class="symbol">,</span><span class="normal"> <a href="/usr/share/gtk-doc/html/telepathy-logger/TplEntity.html#TPL-ENTITY-CONTACT:CAPS">TPL_ENTITY_CONTACT</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
+
+<span class="normal">  walker </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="TplLogManager.html#tpl-log-manager-walk-filtered-events">tpl_log_manager_walk_filtered_events</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">log_manager</span><span class="symbol">,</span>
+<span class="normal">      account</span><span class="symbol">,</span>
+<span class="normal">      target</span><span class="symbol">,</span>
+<span class="normal">      <a href="/usr/share/gtk-doc/html/telepathy-logger/TplLogManager.html#TPL-EVENT-MASK-TEXT:CAPS">TPL_EVENT_MASK_TEXT</a></span><span class="symbol">,</span>
+<span class="normal">      <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span>
+<span class="normal">      <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
+
+<span class="normal">  </span><span class="function"><a href="TplLogWalker.html#tpl-log-walker-get-events-async">tpl_log_walker_get_events_async</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">walker</span><span class="symbol">,</span>
+<span class="normal">      </span><span class="number">5</span><span class="symbol">,</span>
+<span class="normal">      log_walker_get_events_cb</span><span class="symbol">,</span>
+<span class="normal">      <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
+
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">walker</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">target</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">log_manager</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">account</span><span class="symbol">);</span>
+<span class="cbracket">}</span>
+
+<span class="type">int</span>
+<span class="function">main</span><span class="normal"> </span><span class="symbol">(</span><span class="type">int</span><span class="normal"> argc</span><span class="symbol">,</span>
+<span class="normal">    </span><span class="type">char</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">argv</span><span class="symbol">[])</span>
+<span class="cbracket">{</span>
+<span class="normal">  </span><span class="usertype">GQuark</span><span class="normal"> features</span><span class="symbol">[]</span><span class="normal"> </span><span class="symbol">=</span><span class="normal"> </span><span class="cbracket">{</span><span class="normal"> <a href="http://telepathy.freedesktop.org/doc/telepathy-glib-0.24.x/telepathy-glib-account-manager.html#TP-ACCOUNT-MANAGER-FEATURE-CORE:CAPS">TP_ACCOUNT_MANAGER_FEATURE_CORE</a></span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="normal"> </span><span class="cbracket">}</span><span class="symbol">;</span>
+<span class="normal">  <a href="http://telepathy.freedesktop.org/doc/telepathy-glib-0.24.x/telepathy-glib-account-manager.html#TpAccountManager">TpAccountManager</a> </span><span class="symbol">*</span><span class="normal"> account_manager</span><span class="symbol">;</span>
+
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#g-type-init">g_type_init</a></span><span class="normal"> </span><span class="symbol">();</span>
+<span class="normal">  loop </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#g-main-loop-new">g_main_loop_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS">FALSE</a></span><span class="symbol">);</span>
+
+<span class="normal">  account_manager </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://telepathy.freedesktop.org/doc/telepathy-glib-0.24.x/telepathy-glib-account-manager.html#tp-account-manager-dup">tp_account_manager_dup</a></span><span class="normal"> </span><span class="symbol">();</span>
+<span class="normal">  </span><span class="function"><a href="http://telepathy.freedesktop.org/doc/telepathy-glib-0.24.x/telepathy-glib-proxy.html#tp-proxy-prepare-async">tp_proxy_prepare_async</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">account_manager</span><span class="symbol">,</span>
+<span class="normal">      features</span><span class="symbol">,</span>
+<span class="normal">      account_manager_prepare_cb</span><span class="symbol">,</span>
+<span class="normal">      <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
+
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#g-main-loop-run">g_main_loop_run</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">loop</span><span class="symbol">);</span>
+
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">account_manager</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#g-main-loop-unref">g_main_loop_unref</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">loop</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="keyword">return</span><span class="normal"> </span><span class="number">0</span><span class="symbol">;</span>
+<span class="cbracket">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<br class="example-break">
+</div>
+<div class="refsect1">
+<a name="TplLogWalker.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="tpl-log-walker-get-events-async"></a><h3>tpl_log_walker_get_events_async ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tpl_log_walker_get_events_async (<em class="parameter"><code><a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a> *walker</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> num_events</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Walk the logs to retrieve the next most recent <em class="parameter"><code>num_event</code></em>
+ events.</p>
+<div class="refsect3">
+<a name="id-1.2.4.8.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>walker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_events</p></td>
+<td class="parameter_description"><p>number of maximum events to fetch</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p> a callback to call when
+the request is satisfied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid until first called."><span class="acronym">scope async</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 0.8.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-log-walker-get-events-finish"></a><h3>tpl_log_walker_get_events_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tpl_log_walker_get_events_finish (<em class="parameter"><code><a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a> *walker</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **events</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.4.8.3.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>walker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>events</p></td>
+<td class="parameter_description"><p> a pointer to a <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> used to return the list <a class="link" href="TplEvent.html" title="TplEvent"><span class="type">TplEvent</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> TelepathyLogger.Event]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> to fill</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.8.3.5"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if the operation was successful, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><span class="type">FALSE</span></a>.</p>
+<p></p>
+</div>
+<p class="since">Since 0.8.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-log-walker-rewind-async"></a><h3>tpl_log_walker_rewind_async ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tpl_log_walker_rewind_async (<em class="parameter"><code><a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a> *walker</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> num_events</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Move the <em class="parameter"><code>walker</code></em>
+ back by the last <em class="parameter"><code>num_event</code></em>
+ events that were
+returned by <a class="link" href="TplLogWalker.html#tpl-log-walker-get-events-async" title="tpl_log_walker_get_events_async ()"><code class="function">tpl_log_walker_get_events_async()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.4.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>walker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_events</p></td>
+<td class="parameter_description"><p>number of events to move back</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p> a callback to call when
+the request is satisfied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid until first called."><span class="acronym">scope async</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 0.8.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-log-walker-rewind-finish"></a><h3>tpl_log_walker_rewind_finish ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tpl_log_walker_rewind_finish (<em class="parameter"><code><a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a> *walker</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.4.8.5.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>walker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> to fill</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.8.5.5"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if the operation was successful, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><span class="type">FALSE</span></a>.</p>
+<p></p>
+</div>
+<p class="since">Since 0.8.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-log-walker-is-start"></a><h3>tpl_log_walker_is_start ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tpl_log_walker_is_start (<em class="parameter"><code><a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a> *walker</code></em>);</pre>
+<p>Determines whether <em class="parameter"><code>walker</code></em>
+ is pointing at the most recent event in
+the logs. This is the case when <em class="parameter"><code>walker</code></em>
+ has not yet returned any
+events or has been rewound completely.</p>
+<div class="refsect3">
+<a name="id-1.2.4.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>walker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.8.6.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if <em class="parameter"><code>walker</code></em>
+is pointing at the most recent event,
+otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><span class="type">FALSE</span></a>.</p>
+<p></p>
+</div>
+<p class="since">Since 0.8.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tpl-log-walker-is-end"></a><h3>tpl_log_walker_is_end ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tpl_log_walker_is_end (<em class="parameter"><code><a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a> *walker</code></em>);</pre>
+<p>Determines whether <em class="parameter"><code>walker</code></em>
+ has run out of events. This is the case
+when <em class="parameter"><code>walker</code></em>
+ has returned all the events from the logs.</p>
+<div class="refsect3">
+<a name="id-1.2.4.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>walker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TplLogWalker.html" title="TplLogWalker"><span class="type">TplLogWalker</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.4.8.7.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if <em class="parameter"><code>walker</code></em>
+has run out of events, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><span class="type">FALSE</span></a>.</p>
+<p></p>
+</div>
+<p class="since">Since 0.8.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="TplLogWalker.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="TplLogWalkerPriv"></a><h3>TplLogWalkerPriv</h3>
+<pre class="programlisting">typedef struct _TplLogWalkerPriv TplLogWalkerPriv;</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="TplLogWalker.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="TplLogWalker--filter"></a><h3>The <code class="literal">“filter”</code> property</h3>
+<pre class="programlisting">  “filter”                   <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></pre>
+<p>An optional filter function.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TplLogWalker--filter-data"></a><h3>The <code class="literal">“filter-data”</code> property</h3>
+<pre class="programlisting">  “filter-data”              <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></pre>
+<p>User data to pass to the filter function.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!-- ##### SECTION Title ##### -->
+TplLogWalker
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION tpl_log_walker_get_events_async ##### -->
+<para>
+
+</para>
+
+@walker: 
+@num_events: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION tpl_log_walker_get_events_finish ##### -->
+<para>
+
+</para>
+
+@walker: 
+@result: 
+@events: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tpl_log_walker_rewind_async ##### -->
+<para>
+
+</para>
+
+@walker: 
+@num_events: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION tpl_log_walker_rewind_finish ##### -->
+<para>
+
+</para>
+
+@walker: 
+@result: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tpl_log_walker_is_start ##### -->
+<para>
+
+</para>
+
+@walker: 
+@Returns: 
+
+
+<!-- ##### FUNCTION tpl_log_walker_is_end ##### -->
+<para>
+
+</para>
+
+@walker: 
+@Returns: 
+
+
+<!-- ##### STRUCT TplLogWalkerPriv ##### -->
+<para>
+
+</para>
+
+

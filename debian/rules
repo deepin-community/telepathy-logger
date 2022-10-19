@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@ --with=gir
+
+override_dh_auto_configure:
+	dh_auto_configure -- --libexecdir="\$${prefix}/lib/telepathy" \
+		--disable-Werror \
+		--enable-gtk-doc \
+		--with-html-dir=\$${prefix}/share/doc/libtelepathy-logger-doc \
+		--enable-introspection \
+		--disable-silent-rules \
+		PYTHON=/usr/bin/python3 \
+		$(NULL)
+
+override_dh_strip:
+	dh_strip --dbgsym-migration='libtelepathy-logger3-dbg (<< 0.8.2-2~)'
+
+# commands not to run
+override_dh_auto_test:

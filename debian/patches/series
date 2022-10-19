@@ -1,0 +1,4 @@
+Add-a-systemd-user-service.patch
+update_gtkdoc.patch
+doc-Use-CDATA-section-to-avoid-XML-error-caused-by-e.patch
+sync_tools_with_tp-glib_master.patch
